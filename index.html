@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Geert-Jan Huizing</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -37,7 +38,10 @@
   </style>
   <body>
     <div class="container text-center">
+      <!-- Title -->
       <h1>Geert-Jan Huizing</h1>
+
+      <!-- Subtitle -->
       <p>
         PhD student at the
         <a href="https://www.pasteur.fr">Institut Pasteur</a>, supervised by
@@ -46,6 +50,8 @@
         >
         and <a href="http://www.gpeyre.com/">Gabriel Peyré</a>
       </p>
+
+      <!-- Social media buttons -->
       <p>
         <a href="mailto:geert-jan.huizing@pasteur.fr" class="btn btn-dark"
           >Email</a
@@ -63,7 +69,30 @@
 
         <a href="cv.pdf" class="btn btn-dark">My resume</a>
       </p>
+      <div
+        class="toast align-items-center text-bg-primary position-fixed top-0 end-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        style="margin: 2em"
+        data-bs-autohide="false"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            <strong>Hiring?</strong> I am expecting to graduate in September and
+            am actively looking for a postdoc or industry position
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
       <br />
+
+      <!-- Publications -->
       <h2>Publications</h2>
       <div class="row">
         <div class="col-sm-4">
@@ -77,8 +106,16 @@
               </h6>
               <p>GJ Huizing, IM Deutschmann, G Peyré, L Cantini</p>
               <div class="card-buttons">
-                <a href="https://www.nature.com/articles/s41467-023-43019-2" class="btn btn-outline-dark">Paper</a>
-                <a href="https://github.com/cantinilab/Mowgli" class="btn btn-outline-dark">Code</a>
+                <a
+                  href="https://www.nature.com/articles/s41467-023-43019-2"
+                  class="btn btn-outline-dark"
+                  >Paper</a
+                >
+                <a
+                  href="https://github.com/cantinilab/Mowgli"
+                  class="btn btn-outline-dark"
+                  >Code</a
+                >
               </div>
             </div>
           </div>
@@ -96,8 +133,16 @@
               </h6>
               <p>GJ Huizing, L Cantini, G Peyré</p>
               <div class="card-buttons">
-                <a href="https://proceedings.mlr.press/v162/huizing22a/huizing22a.pdf" class="btn btn-outline-dark">Paper</a>
-                <a href="https://github.com/CSDUlm/wsingular" class="btn btn-outline-dark">Code</a>
+                <a
+                  href="https://proceedings.mlr.press/v162/huizing22a/huizing22a.pdf"
+                  class="btn btn-outline-dark"
+                  >Paper</a
+                >
+                <a
+                  href="https://github.com/CSDUlm/wsingular"
+                  class="btn btn-outline-dark"
+                  >Code</a
+                >
               </div>
             </div>
           </div>
@@ -114,18 +159,129 @@
               </h6>
               <p>GJ Huizing, G Peyré, L Cantini</p>
               <div class="card-buttons">
-                <a href="https://academic.oup.com/bioinformatics/article/38/8/2169/6528312" class="btn btn-outline-dark">Paper</a>
-                <a href="https://github.com/cantinilab/OT-scOmics" class="btn btn-outline-dark">Code</a>
+                <a
+                  href="https://academic.oup.com/bioinformatics/article/38/8/2169/6528312"
+                  class="btn btn-outline-dark"
+                  >Paper</a
+                >
+                <a
+                  href="https://github.com/cantinilab/OT-scOmics"
+                  class="btn btn-outline-dark"
+                  >Code</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Education -->
+      <h2>Education</h2>
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="list-group col-sm-6">
+          <!-- PhD -->
+          <div
+            class="list-group-item list-group-item-action d-flex gap-3 py-3"
+            aria-current="true"
+            style="opacity: 0.7"
+          >
+            <img
+              src="pasteur.jpg"
+              alt="twbs"
+              width="32"
+              height="32"
+              class="rounded-circle flex-shrink-0"
+            />
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div style="text-align: left">
+                <h6 class="mb-0">Ph.D. in computational biology</h6>
+                <p class="mb-0 opacity-75">Institut Pasteur & ENS PSL</p>
+              </div>
+              <small class="opacity-50 text-nowrap">2020-2024 (expected)</small>
+            </div>
+          </div>
+
+          <!-- M2 -->
+          <div
+            class="list-group-item list-group-item-action d-flex gap-3 py-3"
+            aria-current="true"
+          >
+            <img
+              src="ipp.png"
+              alt="twbs"
+              width="32"
+              height="32"
+              class="rounded-circle flex-shrink-0"
+            />
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div style="text-align: left">
+                <h6 class="mb-0">M2 Data Science (masters’ degree)</h6>
+                <p class="mb-0 opacity-75">
+                  Institut Polytechnique de Paris, Paris
+                </p>
+              </div>
+              <small class="opacity-50 text-nowrap">2019-2020</small>
+            </div>
+          </div>
+
+          <!-- Télécom -->
+          <div
+            class="list-group-item list-group-item-action d-flex gap-3 py-3"
+            aria-current="true"
+          >
+            <img
+              src="telecom.png"
+              alt="twbs"
+              width="32"
+              height="32"
+              class="rounded-circle flex-shrink-0"
+            />
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div style="text-align: left">
+                <h6 class="mb-0">Diplôme d'ingénieur (masters’ degree)</h6>
+                <p class="mb-0 opacity-75">Télécom Paris, Paris</p>
+              </div>
+              <small class="opacity-50 text-nowrap">2017-2020</small>
+            </div>
+          </div>
+
+          <!-- Prépa -->
+          <div
+            class="list-group-item list-group-item-action d-flex gap-3 py-3"
+            aria-current="true"
+          >
+            <img
+              src="massena.webp"
+              alt="twbs"
+              width="32"
+              height="32"
+              class="rounded-circle flex-shrink-0"
+            />
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div style="text-align: left">
+                <h6 class="mb-0">MPSI / MP*</h6>
+                <p class="mb-0 opacity-75">Classe préparatoire Masséna, Nice</p>
+              </div>
+              <small class="opacity-50 text-nowrap">2015-2017</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <!-- end -->
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function () {
+        $(".toast").toast("show");
+      });
+    </script>
   </body>
 </html>
